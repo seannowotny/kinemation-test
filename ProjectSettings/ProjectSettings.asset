@@ -810,7 +810,7 @@ PlayerSettings:
   webGLMemoryGeometricGrowthCap: 96
   webGLPowerPreference: 2
   scriptingDefineSymbols:
-    Standalone: UNITY_BURST_EXPERIMENTAL_ATOMIC_INTRINSICS;UNITY_PHYSICS_CUSTOM
+    Standalone: UNITY_BURST_EXPERIMENTAL_ATOMIC_INTRINSICS;UNITY_PHYSICS_CUSTOM;LATIOS_TRANSFORMS_UNITY
   additionalCompilerArguments: {}
   platformArchitecture: {}
   scriptingBackend: {}
