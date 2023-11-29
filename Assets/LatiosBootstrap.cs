@@ -11,7 +11,7 @@ public class LatiosBakingBootstrap : ICustomBakingBootstrap
     public void InitializeBakingForAllWorlds(ref CustomBakingBootstrapContext context)
     {
         Latios.Transforms.Authoring.TransformsBakingBootstrap.InstallLatiosTransformsBakers(ref context);
-        Latios.Psyshock.Authoring.PsyshockBakingBootstrap.InstallUnityColliderBakers(ref context);
+        // Latios.Psyshock.Authoring.PsyshockBakingBootstrap.InstallUnityColliderBakers(ref context);
         Latios.Kinemation.Authoring.KinemationBakingBootstrap.InstallKinemationBakersAndSystems(ref context);
         Latios.Kinemation.Authoring.KinemationBakingBootstrap.InstallMecanimBakersAndSystems(ref context);
     }
@@ -29,7 +29,7 @@ public class LatiosEditorBootstrap : ICustomEditorBootstrap
 
         Latios.Transforms.TransformsBootstrap.InstallTransforms(world, world.simulationSystemGroup);
         Latios.Kinemation.KinemationBootstrap.InstallKinemation(world);
-        Latios.Calligraphics.CalligraphicsBootstrap.InstallCalligraphics(world);
+        // Latios.Calligraphics.CalligraphicsBootstrap.InstallCalligraphics(world);
 
         return world;
     }
@@ -49,11 +49,11 @@ public class LatiosBootstrap : ICustomBootstrap
         BootstrapTools.InjectSystems(systems, world, world.simulationSystemGroup);
 
         Latios.Transforms.TransformsBootstrap.InstallTransforms(world, world.simulationSystemGroup);
-        Latios.Myri.MyriBootstrap.InstallMyri(world);
+        // Latios.Myri.MyriBootstrap.InstallMyri(world);
         Latios.Kinemation.KinemationBootstrap.InstallKinemation(world);
         Latios.Kinemation.KinemationBootstrap.InstallMecanimFeatures(world);
-        Latios.Calligraphics.CalligraphicsBootstrap.InstallCalligraphics(world);
-        Latios.Calligraphics.CalligraphicsBootstrap.InstallCalligraphicsAnimations(world);
+        // Latios.Calligraphics.CalligraphicsBootstrap.InstallCalligraphics(world);
+        // Latios.Calligraphics.CalligraphicsBootstrap.InstallCalligraphicsAnimations(world);
 
         world.initializationSystemGroup.SortSystems();
         world.simulationSystemGroup.SortSystems();
